@@ -4,7 +4,7 @@ import random
 
 #三角形の幾何学画像生成プログラム
 
-class Geometry:
+class MyGeometry:
     def __init__(self):
         self.color1 = [0,0,0]
         self.color2 = [255,255,255]
@@ -40,5 +40,7 @@ class Geometry:
     def debug(self,x,y):
         print("{}, {}".format(y,x))
 
-g = Geometry()
-g.create_geometry(25,60,60)
+
+if(__name__ == "__main__"):
+    g = MyGeometry()
+    g.create_geometry(25,60,60,"createdImage")
